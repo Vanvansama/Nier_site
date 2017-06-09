@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="dist/typeit.min.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="dist/typeit.min.js"></script>
+    
+</head>
+
+<body>
+    <div id="bground">
+        <audio autoplay="autoplay" loop="loop">
+            <source src="./video/NieR.mp3" type="audio/mp3"/>
+        </audio>
+        <video class="page_bg" autoplay="true" loop playsinline>
+            <source src="./video/startloopvd.mp4" type="video/mp4">
+            <img class="page_bg" src="http://image.gamersky.com/zqimg/nierautomata2/preview/ztimages/bg_begin.jpg" alt="replace">
+        </video>
+        <div class="startTit" data-txt="尼尔：机械纪元">尼尔：机械纪元</div>
+        <div class="startMenu">
+            <a class="startgame animFlr anim5" id="nier">
+                <span>主角资料</span>
+                <i></i>
+            </a>
+            <a class="gameinfo animFlr anim6" id="info">
+                <span>游戏资料</span>
+                <i></i>
+            </a>
+            <a class="buygame animFlr anim7">
+                <span>购买游戏</span>
+                <i></i>
+            </a>
+        </div>
+    </div>
+    <div id="bgnier">
+        <div class="animateBg">
+             <img src="./image/bg_infos.jpg" alt="bg" class="ab_bg">
+        </div>
+        <div class="infos_hw infos_hw1"><i></i></div>
+        <div class="infos_hw infos_hw2"><i></i></div>
+        <div id="infosCon" class="infos_con">
+            <div class="infos_tit_wrap">
+                <div class="infos_tit">
+                    <span>主角资料</span><i>INFO</i>
+                </div>
+            </div>
+            <div class="infos_main">
+                <div class="infos_story">
+                    <div class="txtwrap">
+                        <p><span>尤尔哈二号B型 冷静的意志之刃</span></p>
+                        <p>作为人型机械兵部队尤哈尔的一员被派遣</p>
+                        <p>战斗通用型的人工智能</p>
+                        <p>可以使用双长剑近距离攻击</p>
+                        <p>也能使用支援系统“POD”机器人远程攻击</p>
+                        <p>因为装备作战眼罩，平时基本看不到她的神情</p>
+                        <p>尤尔哈部队成员都没有名字，全部用代号称呼</p>
+                        <p>虽然原则上禁止拥有感情</p>
+                        <p>但是因为个体差异，2B的性格较为冷静。</p>
+                        <p><span>CV：石川由依</span></p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="./image/NieR_3.png"/>
+                </div>
+            </div>
+            <div id="fixNav">
+                <a class="fx_home" id="fx_home2"><span>返回首页</span></a>
+            </div>
+        </div>
+    </div>
+    <div id="bginfo">
+        <div class="animateBg">
+             <img src="./image/bg_infos.jpg" alt="bg" class="ab_bg">
+        </div>
+        <div class="infos_hw infos_hw1"><i></i></div>
+        <div class="infos_hw infos_hw2"><i></i></div>
+        <div id="infosCon" class="infos_con">
+            <div class="infos_tit_wrap">
+                <div class="infos_tit">
+                    <span>故事背景</span><i>STORY</i>
+                </div>
+            </div>
+            <div class="infos_main">
+                <div class="infos_story">
+                    <div class="txtwrap">
+                        <p>《尼尔：机械纪元》游戏故事发生在遥远的未来。</p>
+                        <p>来自外星的入侵者毫无征兆地攻击了地球，并释放出新的威胁：一种名为机械生命体的武器。</p>
+                        <p>人类在无力抵抗这种威胁的情况下逃往月球。</p>
+                        <p>人类委员会组织了一支由人形机器人组成的抵抗军队，来夺回地球。</p>
+                        <p>为了打破僵局，抵抗军部署了一个新的机器人部队：尤尔哈。</p>
+                        <p>机械生命体和人形机器人之间的一场大战一触即发。</p>
+                        <p>随着战争的进行，被遗忘已久的世界的真相也将浮出水面……</p>
+                    </div>
+                </div>
+            </div>
+            <div id="fixNav">
+                <a class="fx_home" id="fx_home"><span>返回首页</span></a>
+            </div>
+        </div>
+    </div>
+    
+    <div id="bgfirst">
+        <div id="input">
+            <p class="example1"></p>
+        </div>
+        <input type="button" class="btn" id="btn" value="overclocking" />
+    </div>
+
+    <script>
+        $('.example1').typeIt({
+            whatToType: ["正在加载，正在启动系统", "正在开始系统检查",
+            "记忆单元检测：正常","正在初始化战术记录","正在加载地形数据",
+            "体征检测：正常","剩余MP检测","黑匣子温度：正常","黑匣子内部压力：正常",
+            "正在启动IFF","正在启动FCS","装备认证：完成","系统：完全检测","战斗准备完成"],
+            typeSpeed: 50
+        });
+    </script>
+    <script>
+        var oNier = document.getElementById('nier');
+        var oBtn = document.getElementById('btn');
+        var oInfo = document.getElementById('info');
+        var oHome = document.getElementById('fx_home');
+        var oHome2 = document.getElementById('fx_home2');
+        var oDiv1 = document.getElementById('bgfirst');
+        var oDiv2 = document.getElementById('bground');
+        var oDiv3 = document.getElementById('bginfo');
+        var oDiv4 = document.getElementById('bgnier');
+        oBtn.onclick = function () {
+            if (oDiv1.style.display == 'block') {
+                oDiv1.style.display = 'none';
+                oDiv2.style.display = 'block';
+            } else {
+                oDiv2.style.display = 'none';
+                oDiv1.style.display = 'block';
+            }
+        };
+        oInfo.onclick = function(){
+            if (oDiv2.style.display == 'block') {
+                oDiv2.style.display = 'none';
+                oDiv3.style.display = 'block';
+            } else {
+                oDiv3.style.display = 'none';
+                oDiv2.style.display = 'block';
+            }
+        };
+        oHome.onclick = function(){
+            if (oDiv3.style.display == 'block') {
+                oDiv3.style.display = 'none';
+                oDiv2.style.display = 'block';
+            } else {
+                oDiv2.style.display = 'none';
+                oDiv3.style.display = 'block';
+            }
+        };
+        oHome2.onclick = function(){
+            if (oDiv4.style.display == 'block') {
+                oDiv4.style.display = 'none';
+                oDiv2.style.display = 'block';
+            } else {
+                oDiv2.style.display = 'none';
+                oDiv4.style.display = 'block';
+            }
+        };
+        oNier.onclick = function(){
+            if (oDiv2.style.display == 'block') {
+                oDiv2.style.display = 'none';
+                oDiv4.style.display = 'block';
+            } else {
+                oDiv4.style.display = 'none';
+                oDiv2.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

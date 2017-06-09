@@ -1,0 +1,362 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#bgfirst{
+    font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+    width: 100%;
+    height: 870px;
+    background: black;
+    color: white;
+    display: block;
+    font-size: 1.2rem;
+    padding: 50px;
+}
+#bgfirst #input{
+    height: 700px;
+}
+#bgfirst .btn{
+    display: block;
+    width: 30%;
+    padding: .4rem;
+    border: none;
+    margin: 1rem auto;
+    font-size: 1.3rem;
+    background: rgba(255, 255, 255, 0.23);
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .3s background; 
+}
+
+#bgfirst .btn:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+#bground{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+#bground img{
+    width: 100%;
+    height: 100%;
+}
+#bground .page_bg{
+    width: 100%;
+    height: 100%;
+}
+#bgrond .vdLoop{
+    width: 100%;
+    height: 100%;
+}
+.startMenu{
+    position: absolute;
+    left: 38.5%;
+    top: 65%;
+    width: 330px;
+}
+.startTit{
+    position: absolute;
+    left: 40%;
+    top: 55%;
+    overflow: hidden;
+    width: 280px;
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+}
+.startMenu a {
+    display: block;
+    position: relative;
+    margin-bottom: 8px;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    -moz-user-select:none;
+}
+.startMenu a i {
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 20%;
+    width: 200px;
+    height: 2px;
+    background-color: #fff;
+    -webkit-box-shadow: 2px 2px 0 rgba(35,26,36,.8);
+    box-shadow: 2px 2px 0 rgba(35,26,36,.8);
+    -webkit-transition-duration: .15s;
+    transition-duration: .15s;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: scale(.8,1);
+    -ms-transform: scale(.8,1);
+    transform: scale(.8,1);
+}
+.startMenu a:hover i {
+	opacity:1;
+	visibility:visible;
+	-webkit-transform:scale(1);
+	-ms-transform:scale(1);
+	transform:scale(1)
+}
+#bgnier{
+    display: none;
+}
+#bgnier .animateBg .ab_bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: repeat-y;
+}
+#bgnier .infos_hw {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 31px;
+    border-top: 3px solid #434231;
+    top: 100px;
+}
+#bgnier .infos_hw1 {
+    top: 100px;
+}
+#bgnier .infos_hw2 {
+    top: 680px;
+}
+#bgnier .infos_hw i {
+    display: block;
+    margin: 0 67px;
+    height: 31px;
+    background: url(http://image.gamersky.com/zqimg/nierautomata2/preview/ztimages/bg_hw.png) repeat-x;
+}
+#bgnier .infos_con {
+    position: absolute;
+    left: 0;
+    top: 150px;
+    width: 100%;
+    height: 400px;
+}
+#bgnier .infos_con .infos_tit_wrap {
+    margin-bottom: 20px;
+    padding-left: 50px;
+    height: 64px;
+}
+#bgnier .infos_con .infos_tit_wrap .infos_tit {
+    color: #434231;
+    text-shadow: 7px 7px 0 rgba(128,120,96,.42);
+    letter-spacing: 15px;
+}
+#bgnier .infos_con .infos_tit_wrap .infos_tit span {
+    font-size: 30px;
+}
+#bgnier .infos_con .infos_tit_wrap .infos_tit i {
+    margin-left: 27px;
+    font-style: normal;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+#bgnier .infos_con .infos_main {
+    position: relative;
+    margin-left: 50px;
+    height: 400px;
+}
+#bgnier .infos_con .infos_main .infos_story {
+    position: absolute;
+    left: 57px;
+    top: 50%;
+    padding: 14px 0;
+    width: 700px;
+    height: auto;
+    background-color: #dcd6b8;
+    -webkit-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+    -webkit-box-shadow: 2px 2px 0 rgba(95,85,55,.42);
+    box-shadow: 2px 2px 0 rgba(95,85,55,.42);
+}
+#bgnier .infos_con .infos_main .image {
+    position: absolute;
+    left: 600px;
+    top: 10%;
+    padding: 14px 0;
+    width: 200px;
+    height: auto;
+    background-color: #dcd6b8;
+    box-shadow: 2px 2px 0 rgba(95,85,55,.42);
+}
+#bgnier .infos_con .infos_main .infos_story::before {
+    position: absolute;
+    left: -57px;
+    top: 0;
+    height: 100%;
+    display: block;
+    content: '';
+    width: 4px;
+    border-left: 16px solid rgba(67,66,49,.3);
+    border-right: 5px solid rgba(67,66,49,.3);
+}
+#bgnier .infos_con .infos_main .infos_story .txtwrap {
+    margin: 0 auto;
+    padding: 10px 0;
+    width: 650px;
+    border: 2px solid #928b70;
+    border-left: none;
+    border-right: none;
+}
+#bgnier .infos_con .infos_main .infos_story .txtwrap p {
+    padding: 0 6px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 15px;
+    color: #434231;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#bgnier .infos_con .infos_main .infos_story .txtwrap p span{
+    font-size: 20px;
+}
+#bginfo{
+    display: none;
+}
+#bginfo .animateBg .ab_bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: repeat-y;
+}
+#bginfo .infos_hw {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 31px;
+    border-top: 3px solid #434231;
+    top: 100px;
+}
+#bginfo .infos_hw1 {
+    top: 100px;
+}
+#bginfo .infos_hw2 {
+    top: 680px;
+}
+#bginfo .infos_hw i {
+    display: block;
+    margin: 0 67px;
+    height: 31px;
+    background: url(http://image.gamersky.com/zqimg/nierautomata2/preview/ztimages/bg_hw.png) repeat-x;
+}
+#bginfo .infos_con {
+    position: absolute;
+    left: 0;
+    top: 150px;
+    width: 100%;
+    height: 400px;
+}
+#bginfo .infos_con .infos_tit_wrap {
+    margin-bottom: 20px;
+    padding-left: 50px;
+    height: 64px;
+}
+#bginfo .infos_con .infos_tit_wrap .infos_tit {
+    color: #434231;
+    text-shadow: 7px 7px 0 rgba(128,120,96,.42);
+    letter-spacing: 15px;
+}
+#bginfo .infos_con .infos_tit_wrap .infos_tit span {
+    font-size: 30px;
+}
+#bginfo .infos_con .infos_tit_wrap .infos_tit i {
+    margin-left: 27px;
+    font-style: normal;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+#bginfo .infos_con .infos_main {
+    position: relative;
+    margin-left: 50px;
+    height: 400px;
+}
+#bginfo .infos_con .infos_main .infos_story {
+    position: absolute;
+    left: 57px;
+    top: 50%;
+    padding: 14px 0;
+    width: 1083px;
+    height: auto;
+    background-color: #dcd6b8;
+    -webkit-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+    -webkit-box-shadow: 2px 2px 0 rgba(95,85,55,.42);
+    box-shadow: 2px 2px 0 rgba(95,85,55,.42);
+}
+#bginfo .infos_con .infos_main .infos_story::before {
+    position: absolute;
+    left: -57px;
+    top: 0;
+    height: 100%;
+    display: block;
+    content: '';
+    width: 4px;
+    border-left: 16px solid rgba(67,66,49,.3);
+    border-right: 5px solid rgba(67,66,49,.3);
+}
+#bginfo .infos_con .infos_main .infos_story .txtwrap {
+    margin: 0 auto;
+    padding: 10px 0;
+    width: 1050px;
+    border: 2px solid #928b70;
+    border-left: none;
+    border-right: none;
+}
+#bginfo .infos_con .infos_main .infos_story .txtwrap p {
+    padding: 0 6px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 22px;
+    color: #434231;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#fixNav{
+    position: absolute;
+    right: 70px;
+    top: 50%;
+    z-index: 10;
+    width: 50px;
+}
+#fixNav .fx_home{
+    -moz-user-select:none;
+    position: relative;
+    display: block;
+    margin-bottom: 7px;
+    width: 50px;
+    height: 41px;
+    background-color: #706a58;
+    border: 1px solid #341e09;
+    box-sizing: border-box;
+}
+#fixNav .fx_home span{
+    display: block;
+    position: absolute;
+    right: 48px;
+    bottom: -1px;
+    padding-top: 5px;
+    width: 77px;
+    height: 41px;
+    line-height: 32px;
+    font-size: 16px;
+    color: #fff6e7;
+    text-align: right;
+    background-color: #706a58;
+    border: 1px solid #341e09;
+    border-right: none;
+    box-sizing: border-box;
+}
+
